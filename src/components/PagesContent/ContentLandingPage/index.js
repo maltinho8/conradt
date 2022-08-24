@@ -157,16 +157,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const CardContainerConradt = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-content: center;
-  }
-`;
+
 
 
 const ContentLandingPage = () => {
@@ -228,21 +219,7 @@ const ContentLandingPage = () => {
     },
   ];
 
-  const detailsCardConradt = [
-    {
-      id: "1",
-      headline: "Frank Conradt",
-      description: "Geschäftsführer",
-      image: (
-        <img
-          alt="1"
-          src= "https://media-exp1.licdn.com/dms/image/C4D03AQFT0dRl9iXpxQ/profile-displayphoto-shrink_200_200/0/1613655783652?e=2147483647&v=beta&t=b2wE5LPto1KBfBAOmbhHoWhdJEAlkC0C7rHN6gaxNi8"
-          style={{ objectFit: "cover", width: 180, height: 180 }}
-        />
-      )
-      
-    }
-  ];
+  
   return (
     <Container>
       <Background>
