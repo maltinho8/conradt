@@ -136,7 +136,8 @@ const HeaderContainer = styled.div`
   left: 8%;
   @media screen and (max-width: 768px) {
     
-    position: absolute;
+    
+    top: 30%;
     left: 0%;
   }
 `;

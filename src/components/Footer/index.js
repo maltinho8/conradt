@@ -27,7 +27,7 @@ const Column = styled.div`
 
 const Row2 = styled.div`
   display: flex;
-    grid-gap: 130px;
+    grid-gap: 60px;
     justify-content: center;
     width: 100%;
     margin-left: 0rem;

@@ -12,9 +12,12 @@ const Nav = styled.nav`
   margin-right: 5rem;
   margin-left: 5rem;
   z-index: 10;
+  
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
+    height: 40px;
+    
   }
 `;
 
