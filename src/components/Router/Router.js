@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import NavigationBar from "../Bar/NavigationBar/index.js";
 import LandingPage from "../Pages/LandingPage/LandingPage";
 import Impressum from "../Organisation/Imprint/Imprint.js";
@@ -13,6 +13,7 @@ const Routing = () => {
       <NavigationBar />
 
       <Routes>
+      <Route path="/" element={<Navigate replace to="/LandingPage" />} />
         <Route path="/LandingPage" element={<LandingPage />}>
       
         </Route>

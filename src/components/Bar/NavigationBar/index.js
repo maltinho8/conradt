@@ -45,12 +45,12 @@ const NavigationBar = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/LandingPage#anchor1">WORK</NavLink>
+        <NavLink smooth to="/LandingPage#anchor1">WORK</NavLink>
         <Burger />
         <NavMenu>
           <NavLink to="/LandingPage">FRANK CONRADT GMBH</NavLink>
         </NavMenu>
-        <NavLink to="/LandingPage#anchor2">CONTACT</NavLink>
+        <NavLink smooth to="/LandingPage#anchor2">CONTACT</NavLink>
       </Nav>
     </>
   );

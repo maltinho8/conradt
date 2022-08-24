@@ -134,12 +134,34 @@ const HeaderContainer = styled.div`
   position: absolute;
   top: 55%;
   left: 8%;
+  @media screen and (max-width: 768px) {
+    
+    position: absolute;
+    left: 0%;
+  }
+`;
+
+const CenterButton = styled.div`
+display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const CardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-content: center;
+  }
+`;
+
+const CardContainerConradt = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-content: center;
@@ -205,6 +227,22 @@ const ContentLandingPage = () => {
       
     },
   ];
+
+  const detailsCardConradt = [
+    {
+      id: "1",
+      headline: "Frank Conradt",
+      description: "Geschäftsführer",
+      image: (
+        <img
+          alt="1"
+          src= "https://media-exp1.licdn.com/dms/image/C4D03AQFT0dRl9iXpxQ/profile-displayphoto-shrink_200_200/0/1613655783652?e=2147483647&v=beta&t=b2wE5LPto1KBfBAOmbhHoWhdJEAlkC0C7rHN6gaxNi8"
+          style={{ objectFit: "cover", width: 180, height: 180 }}
+        />
+      )
+      
+    }
+  ];
   return (
     <Container>
       <Background>
@@ -214,12 +252,12 @@ const ContentLandingPage = () => {
         </HeaderContainer>
       </Background>
       <BackgroundContainer>
-        <ContentContainer>
+        <ContentContainer id="anchor1">
           <Boxes>
             <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
           </Boxes>
         </ContentContainer>
-        <ContentContainer id="anchor1">
+        <ContentContainer>
           <Boxes>
             <ImageSlider/>
           </Boxes>
@@ -237,7 +275,11 @@ const ContentLandingPage = () => {
           <Boxes>
             <TextHeadline>Gehen Sie mit mir auf Nummer sicher.</TextHeadline>
             <Text>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Text>
-            <Button><ButtonMailto label="Kontaktieren Sie mich" mailto="mailto:frankconradt@example.com" /></Button>
+            <br />
+            <br />
+          <CenterButton>
+          <Button><ButtonMailto label="Kontaktieren Sie mich" mailto="mailto:frankconradt@example.com" /></Button>
+          </CenterButton>
             <br />
           </Boxes>
         </ContentContainer>

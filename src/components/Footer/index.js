@@ -62,9 +62,6 @@ const Footer = () => {
               <HeadingTwo>Impressum</HeadingTwo>
             </Column>
             <Column>
-              <HeadingTwo>Frank Conradt</HeadingTwo>
-            </Column>
-            <Column>
               <HeadingTwo>Datenschutzerklärung</HeadingTwo>
             </Column>
           </Row2>
